@@ -1,0 +1,18 @@
+How do I install VirtualBox Guest Additions on Linux Mint
+
+- Devices > Insert Guest Additions CD image
+- cancel
+- Double click on the CD icon on your desktop. It should be labeled VBOXADDITIONS_X.X.X_YYYYY, where X and Y are numbers.
+- Open in Terminal
+- "sudo apt-get purge virtualbox*"
+- pass
+- "clear"
+- "sudo bash ./VBoxLinuxAdditions.run"
+- "exit"
+- eject CD
+- shut down system
+- In VirtualBox 
+- Setting/Display
+- Video memory + Enable 3D Acceleration
+- verify "dmesg | egrep -i 'virtualbox|vbox'"
+- .... vboxguest ...
